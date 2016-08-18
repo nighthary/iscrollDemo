@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components
+END
+loadforks.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/loadforks.js
+END
+notification.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/notification.js
+END
+monitor.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/monitor.js
+END
+indicator.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/indicator.js
+END
+downloadManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/downloadManager.js
+END

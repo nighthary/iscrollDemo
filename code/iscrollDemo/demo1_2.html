@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>异步加载图片刷新ISCROLL</title>
+</head>
+
+<body>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding:0;
+        box-shadow: border-box;
+    }
+    #wrapper {
+        width: 100%;
+        position: absolute;
+        top: 44px;
+        bottom: 0px;
+        overflow: hidden;
+    }
+
+    #scroller {
+        position: absolute;
+        z-index: 1;
+        padding: 0 10px;
+        width: auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .header{
+        width: 100%;
+        height: 44px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        color: #fff;
+        line-height: 44px;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    </style>
+    <div class="header" onclick="window.history.back()">返回</div>
+    <div id="wrapper">
+        <div id="scroller">
+            <img src="http://img1.3lian.com/2015/w7/90/d/1.jpg" alt="">
+            <img src="http://a0.att.hudong.com/15/08/300218769736132194086202411_950.jpg" alt="">
+            <img src="http://image.tianjimedia.com/uploadImages/2012/236/K7V7012C6295.jpg" alt="">
+            <img src="http://img.pop-photo.com.cn/myspace/image/2011/09/0/50/6/500641_619364053.jpg" alt="">
+            <img src="http://file28.mafengwo.net/M00/1C/09/wKgB6lRsQe-AOON5AAzMPfg_r6M99.jpeg" alt="">
+        </div>
+    </div>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="iscroll-probe-5.1.1.js"></script>
+    <script type="text/javascript">
+    var myscroll;
+    $(function() {
+        initIscroll();
+        imgLoaded();
+    });
+
+
+    function initIscroll() {
+        if (!myscroll) {
+            myscroll = new IScroll($('#wrapper')[0], {
+                mouseWheel: true
+            });
+        }
+    }
+
+    function refreshIScroll() {
+        if (myscroll) {
+            myscroll.refresh();
+        } else {
+            initIscroll();
+        }
+    }
+
+    function  imgLoaded(){
+    	$('img').load(function(){
+    		refreshIScroll();
+    	});
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "App模块",
+ 	"identifier":"application",
+  "description": "",
+  "version": "1.0.1",
+  "dependencies": {},
+	"build" : 2,
+	"releaseNote": "测试更新:扩展Application模块",
+	"hidden" : false
+}

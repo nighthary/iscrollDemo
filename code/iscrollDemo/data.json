@@ -1,0 +1,84 @@
+{
+    "result": "0",
+    "data": [{
+        "name": "刀锋之影",
+        "desc": "你只能在DuCouteau家族看到瓦罗然大陆上最致命的三名用刀高手：我的父亲，我，泰伦。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/Talon/Talon.png"
+    }, {
+        "name": "水晶先锋",
+        "desc": "人类尚未学会控制他们的魔法——因为卡拉曼达已经变成了历史长河中的一条水晶疮疤",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/Skarner/Skarner.jpg"
+    }, {
+        "name": "曙光女神",
+        "desc": "太阳的光芒笼罩着整个符文之地，此刻我与它同在。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/Leona/Leona.png"
+    }, {
+        "name": "齐天大圣",
+        "desc": "我战故我在。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/MonkeyKing/MonkeyKing.png"
+    }, {
+        "name": "掘墓者",
+        "desc": "死后再说。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/Yorick/Yorick.png"
+    }, {
+        "name": "机械木偶",
+        "desc": "与我共舞吧，宝贝。一起舞动，直到死亡",
+        "img":"http://img0.pcgames.com.cn/pcgames/1107/06/2258212_Oriana_Square_0.png"
+    }, {
+        "name": "暗夜猎手",
+        "desc": " 并非所有的影子都是可怕的，至少薇恩有自己的风格，当薇恩降临时，不是所有的阴影都象征着黑暗。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/76.jpg"
+    }, {
+        "name": "机械公敌",
+        "desc": "呃，能不能别把你的脸贴在我的装备上？",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/1.jpg"
+    }, {
+        "name": "复仇火焰",
+        "desc": "这个地方早晚会被烧成灰烬，焚毁它的不是风中飞烬，而是我的复仇之手",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/2.jpg"
+    }, {
+        "name": "盲僧",
+        "desc": "一人之行可灭世，众人之勤可救世",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/3.jpg"
+    }, {
+        "name": "永恒梦魇",
+        "desc": "夜幕将至...漆黑无光...但我仍然能看到他...",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/4.jpg"
+    }, {
+        "name": "嘉文四世",
+        "desc": "'长枪之上出真理' - 加文四世的'遗言'，—于乌尔加特失败的处刑上。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/5.jpg"
+    }, {
+        "name": "扭曲树精",
+        "desc": "在我脱离这样的形态之前我会好好利用它",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/6.jpg"
+    }, {
+        "name": "天启者",
+        "desc": "她舞扇的姿势优雅迷人，但她真正的强大之处在于那些愿与她出生入死的人们心中",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/7.jpg"
+    }, {
+        "name": "荒漠屠夫",
+        "desc": "我的兄弟已被怒气填满，除此之外他空无一物",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/8.jpg"
+    }, {
+        "name": "皮城女警",
+        "desc": "赶紧跑吧宝贝儿，距离你被捕还有5分钟。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/9.jpg"
+    }, {
+        "name": "魔蛇之拥",
+        "desc": "纯洁的花朵下包藏的却是蛇蝎心肠。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/10.jpg"
+    }, {
+        "name": "特朗德尔",
+        "desc": "我已经彻底领悟到了痛苦的真谛，我将会展示给你们",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/11.jpg"
+    }, {
+        "name": "刀锋意志",
+        "desc": "那把剑狂乱飞舞，仿佛蘸血为画。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/12.jpg"
+    }, {
+        "name": "跪术妖姬",
+        "desc": "对于看不清真相的人来说，世界完全是另一番面貌。",
+        "img":"http://wangyou.pcgames.com.cn/zhuanti/lol/hero/13.jpg"
+    }]
+}

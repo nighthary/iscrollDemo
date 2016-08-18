@@ -1,0 +1,85 @@
+10
+
+dir
+7361
+https://lijianbo@172.16.1.189:81/svn/CAMEAP/AppCAEC/trunk/Chameleon-v2.1/butterfly/vendor
+https://lijianbo@172.16.1.189:81/svn/CAMEAP
+
+
+
+2016-02-25T06:30:02.192970Z
+7361
+huangli
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+75409a69-3e34-b44f-9f0d-cc8de98cb29b
+
+jquery
+dir
+
+requirejs-json
+dir
+
+jquery-hammerjs
+dir
+
+requirejs-i18n
+dir
+
+swipe
+dir
+
+requirejs-text
+dir
+
+moment
+dir
+
+zepto
+dir
+
+snap
+dir
+
+require-css
+dir
+
+fastclick
+dir
+
+backbone
+dir
+
+requirejs-link
+dir
+
+hammerjs
+dir
+
+spinjs
+dir
+
+iscroll
+dir
+
+requirejs
+dir
+
+underscore
+dir
+
+requirejs-domready
+dir
+

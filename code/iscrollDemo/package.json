@@ -1,0 +1,21 @@
+{
+  "name": "caec",
+  "version": "1.0.0",
+  "description": "this is caec.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "express": "*",
+    "http-proxy": "*"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "gulp":"*",
+    "gulp-uglify":"*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inier",
+  "license": "ISC"
+}

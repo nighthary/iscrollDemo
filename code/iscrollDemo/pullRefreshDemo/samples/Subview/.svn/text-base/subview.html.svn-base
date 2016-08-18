@@ -1,0 +1,32 @@
+<div id="subview" has-subview="true" data-view="samples/Subview/subview">
+<style type="text/css">
+	.tab-content {
+		margin-top: 44px;
+		width: 100%;
+		height: 100%;
+	}
+  .bar {
+    position: absolute;
+  }
+</style>
+<header class="bar bar-nav blue-bar">
+    <button class="btn btn-link btn-nav pull-left back">
+        <span class="icon icon-left-nav"></span>
+    </button>
+    <h1 class="title">Subview Sample</h1>
+</header>
+<div class="content">
+<div class="tabbar bar bar-standard" data-view="samples/Subview/bar">
+  <div class="segmented-control">
+    <a class="tab-item control-item">Page One</a>
+    <a class="tab-item control-item active">Page Two</a>
+    <a class="tab-item control-item">Page Three</a>
+  </div>
+  <div class="tab-content">
+  	<div class="tab-page" data-view="samples/Subview/page" data-img="./Subview/img/one.jpg"></div>
+  	<div class="tab-page" data-view="samples/Subview/page" data-img="./Subview/img/two.jpg"></div>
+  	<div class="tab-page" data-view="samples/Subview/page" data-img="./Subview/img/three.jpg"></div>
+  </div>
+</div>
+</div>
+</div>

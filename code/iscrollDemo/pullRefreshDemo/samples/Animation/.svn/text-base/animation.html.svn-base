@@ -1,0 +1,113 @@
+<div id="animation" data-view="samples/Animation/animation">
+<style type="text/css">
+	#animation .table-view .table-view-cell {
+		background-position: 0px 100%;
+	}
+	#animation .content ul {
+	  width: 90%;
+	  margin-left: 5%;
+	  border-left: solid 1px;
+	  border-right: solid 1px;
+	  border-radius: 4px;
+	  border-color: #dddddd;
+	}
+</style>
+<header class="bar bar-nav blue-bar">
+    <button class="btn btn-link btn-nav pull-left back">
+        <span class="icon icon-left-nav"></span>
+    </button>
+    <h1 class="title">Animation Samples</h1>
+</header>
+<div class="content">
+	<ul class="table-view">
+		<li class="table-view-cell media" data-animation="slideInRight">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        slideInRight
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="fadeInUpBig">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        fadeInUpBig
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="slideInUp">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        slideInUp
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="fadeInDown">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        fadeInDown
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="slideInDown">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        slideInDown
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="fadeInDownBig">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        fadeInDownBig
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="fadeIn">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        fadeIn
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="fadeInRight">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        fadeInRight
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="fadeInUp">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        fadeInUp
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="fadeInRightBig">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        fadeInRightBig
+		      </div>
+		    </a>
+	  	</li>
+	  	<li class="table-view-cell media" data-animation="Custom">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon"></span>
+		      <div class="media-body">
+		        Custom
+		      </div>
+		    </a>
+	  	</li>
+	</ul>
+</div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "name": "Sample主模块",
+ 	"identifier":"samples",
+  "description": "",
+  "version": "1.0.2",
+  "dependencies": {},
+	"build" : 2,
+	"releaseNote": "测试更新:包含动画,页面跳转,扩展View,子View,自定义APP,组件的例子还未加进来",
+	"hidden" : false
+}

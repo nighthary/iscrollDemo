@@ -1,0 +1,25 @@
+<div id="extendview" data-view="samples/ExtendView/extendview">
+<style type="text/css">
+	#extendview .content span {
+		line-height: 30px;
+		color: blue;
+		font-size: 110%;
+	}
+	#backbutton {
+		margin-top: 20px;
+	}
+</style>
+<header class="bar bar-nav blue-bar">
+    <button class="btn btn-link btn-nav pull-left back">
+        <span class="icon icon-left-nav"></span>
+    </button>
+    <h1 class="title">Extend View Sample</h1>
+</header>
+<div class="content">
+	<div><span>
+	    <br/>这个例子演示了为View类动态扩展一个Android返回键的处理函数.首先我们在
+	    sampleApp.js的fly函数中为所有View添加一个函数onBackButton,该函数的默认行为是调用history.go(-1),
+	    然后我们在extendview.js中覆写了该函数,在调用history.go(-1)前弹出一个确认框.最后我们点击下面的按钮,模拟点击Android返回键,让例子跑起来.</span></div>
+	<div class="btn btn-primary" id="backbutton">模拟点击Android返回键</div>
+</div>
+</div>

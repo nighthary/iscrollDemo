@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>动态添加dom</title>
+</head>
+
+<body>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        /*background-color: #000;*/
+    }
+    #wrapper {
+        width: 100%;
+        position: absolute;
+        top: 44px;
+        bottom: 40px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    #scroller {
+        position: absolute;
+        z-index: 1;
+        padding: 0 10px;
+        width: auto;
+    }
+
+    li {
+        list-style: none;
+        line-height: 50px;
+        border-bottom: 1px solid #999;
+    }
+
+    li .name {
+        color: red;
+
+    }
+
+    .button {
+        background-color: #ef4f4f;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+    }
+    .header{
+        width: 100%;
+        height: 44px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        color: #fff;
+        line-height: 44px;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    </style>
+    <div class="header" onclick="window.history.back()">返回</div>
+    <div id="wrapper">
+        <div id="scroller">
+            <ul>
+                <li>
+                    name:
+                    <input type="text" id="name" placeholder="输入英雄姓名">
+                    <br> desc:
+                    <input type="text" id="desc" placeholder="输入英雄描述">
+                    <br>
+                    <div class="button" id="addHero">添加</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="iscroll-probe-5.1.1.js"></script>
+    <script type="text/javascript">
+    /**
+     *	异步加载dom,数据加载完成之后刷新iscroll
+     */
+    var myscroll;
+    $(function() {
+        initIscroll();
+        loadData();
+
+        $('#addHero').click(function() {
+            var name = $('#name').val(),
+                desc = $('#desc').val();
+
+            if (!name) {
+                alert('英雄姓名不能为空');
+                clearInput();
+                return;
+            }
+
+            if (!desc) {
+                alert('英雄描述不能为空');
+                clearInput();
+                return;
+            }
+            var html = addItem({
+                name: name,
+                desc: desc
+            });
+        	$(this).parents('li').before(html);
+        	refreshIScroll();
+        	toEnd();
+            clearInput();
+        });
+    });
+
+    function clearInput() {
+        $('input').blur();
+        $('#name').val('');
+        $('#desc').val('');
+    }
+
+    function initIscroll() {
+        if (!myscroll) {
+            myscroll = new IScroll($('#wrapper')[0], {
+                mouseWheel: true,
+                probeType: 2,
+                click:true,
+                // useTransform:false
+            });
+
+            myscroll.on('scroll', function() {
+                $('input').blur();
+            });
+        }
+    }
+
+    function refreshIScroll() {
+        if (myscroll) {
+            myscroll.refresh();
+        } else {
+            initIscroll();
+        }
+    }
+
+    function loadData() {
+        $.ajax({
+            url: 'data.json',
+            type: 'get',
+            dataType: "json",
+            success: function(response) {
+                if (response && response.result == 0) {
+                    uiView(response.data);
+                }
+            }
+        });
+    }
+
+    function uiView(data) {
+        if (!data || (data && !data.length)) return;
+        var html = "";
+        $.each(data, function(index, elem) {
+            html += addItem(elem);
+        });
+
+        $('#scroller ul').prepend(html);
+        refreshIScroll();
+    }
+
+
+    function addItem(elem) {
+        return "<li><span class='name'>" + elem.name + "</span>:" + elem.desc + "</li>";
+    }
+
+    function toEnd(){
+        var maxY = myscroll.maxScrollY;
+        myscroll.scrollTo(0,maxY,200);
+    }
+
+    </script>
+</body>
+
+</html>

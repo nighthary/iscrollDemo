@@ -1,0 +1,113 @@
+<div id='whatsnew' data-view="samples/WhatsNew/whatsnew">
+ <style type="text/css">
+  #whatsnew {
+  height: 100%;
+  width: 100%;
+}
+#whatsnew-slider.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+}
+#whatsnew-slider.swipe .swipe-wrap {
+  background-color: #1076c8;
+  overflow: hidden;
+  position: relative;
+}
+#whatsnew-slider.swipe .swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+} 
+#whatsnew-slider.swipe .content0 {
+  padding-top: 40px;
+  background-color: #ccffff;
+  height: 100%;
+}
+#whatsnew-slider.swipe .content1 {
+  padding-top: 40px;
+  background-color: #ccffff;
+  height: 100%;
+}
+#whatsnew-slider.swipe .arrows {
+  color: crimson;
+  text-align: center;
+  margin-top: 20px;
+}
+#whatsnew-slider.swipe .new-fun {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 40px;
+}
+#whatsnew-slider.swipe .new-fun>img {
+  vertical-align: middle;
+  height: 30px;
+}
+#whatsnew-slider.swipe .new-fun>span {
+  font-size: 120%;
+  margin-left: 10px;
+}
+#whatsnew-slider.swipe .start-button {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  width: 250px;
+  background-color: #fff;
+  color: #595959;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  margin-top: 50px;
+  background-color: lightgreen;
+}
+</style>
+  <div id='whatsnew-slider' class='swipe' style="height:100%">
+    <div class='swipe-wrap' style="height:100%">
+          <div class="content0">
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>支持多级回退</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>支持回退至指定页面</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>支持页面跳转传参</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>支持回退时传参</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>支持指定过场动画</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>支持启动过程定制</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>支持动态扩展Butterfly.View</span>
+            </div>
+            <div class="arrows">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></div>
+          </div>
+          <div class="content1">
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>重新整理后的组件</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>更好的国际化框架支持</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>即将支持用户行为统计</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>大量例子,送新手上路</span>
+            </div>
+            <div class="new-fun">
+              <img src="WhatsNew/img/ok.png" /><span>动画提升,页面切换更流畅</span>
+            </div>
+            <div class='start-button'>开始体验</div>
+          </div>  
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>ISCROLL DEMO</title>
+</head>
+<body>
+	<style type="text/css">
+
+		li{
+			height: 40px;
+			list-style: none;
+		}
+	a{line-height: 1.5}
+	</style>
+	<h3>初始化问题</h3>
+	<ul>
+		<li><a href="demo1.html">异步加载dom</a></li>
+		<li><a href="demo1_2.html">加载图片</a></li>
+		<li><a href="demo2.html">动态添加DOM</a></li>
+		<li><a href="demo3.html">不固定高度ISCROLL无法滑动</a></li>
+		<li><a href="demo4.html">高度不达到一屏无法滑动</a></li>
+		<li><a href="demo5.html">输入框点击没有反应</a></li>
+	</ul>
+	<h3>进阶使用</h3>
+	<ul>
+		<li><a href="demo6.html">上拉加载更多&下拉刷新</a></li>
+		<li><a href="demo7.html">scrollTo</a></li>
+	</ul>
+	<h3>优化</h3>
+	<ul>
+		<li><a href="#">内容过多，滑动卡顿或闪退</a></li>
+		<!--
+			1)不要使用checkDOMChanges。虽然checkDOMChanges很方便，定时检测容器长度是否变化来refresh，但这也意味着你要消耗一个Interval的内存空间
+
+	        2)隐藏iscroll滚动条，配置时设置hScrollbar和vScrollbar为false。
+
+	        3)不得已的情况下，去掉各种效果，momentum、useTransform、useTransition都设置为false
+
+	        -webkit-backface-visibility:hidden;
+			-webkit-transform-style:preserve-3d;
+		-->
+		<li><a href="#">滑动不流畅</a></li>
+		<li><a href="#">部分情况需要延迟初始化iscroll，等到css加载完成</a></li>
+	</ul>
+</body>
+</html>
+

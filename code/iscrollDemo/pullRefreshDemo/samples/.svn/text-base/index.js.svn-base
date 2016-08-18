@@ -1,0 +1,19 @@
+define([
+		'butterfly/view',
+		'butterfly'
+	],
+	function(View, Butterfly) {
+	return View.extend({
+		events: {
+
+		},
+		onShow: function() {
+			if(butterfly.firstShow === undefined) {
+				butterfly.firstShow = false;
+				butterfly.navigate('samples/WhatsNew/whatsnew.html',{isPopupView:true});
+			}else {
+				butterfly.navigate('samples/main.html');
+			}
+		}
+	}); //view define
+});

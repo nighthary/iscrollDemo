@@ -1,0 +1,82 @@
+/* 网站评分样式 */
+.raty_score_0,
+.raty_score_0d5,
+.raty_score_1,
+.raty_score_1d5,
+.raty_score_2,
+.raty_score_2d5,
+.raty_score_3,
+.raty_score_3d5,
+.raty_score_4,
+.raty_score_4d5,
+.raty_score_5 {
+    background: url(../assets/imgs/raty.png) no-repeat;
+    background-size: 53px 110px;
+    display: inline-block;
+}
+
+.raty_score_0 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -100px;
+}
+
+.raty_score_0d5 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -90px;
+}
+
+.raty_score_1 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -80px;
+}
+
+.raty_score_1d5 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -70px;
+}
+
+.raty_score_2 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -60px;
+}
+
+.raty_score_2d5 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -50px;
+}
+
+.raty_score_3 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -40px;
+}
+
+.raty_score_3d5 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -30px;
+}
+
+.raty_score_4 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -20px;
+}
+
+.raty_score_4d5 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 -10px;
+}
+
+.raty_score_5 {
+    width: 56px;
+    height: 10px;
+    background-position: 0 0;
+}

@@ -1,0 +1,35 @@
+<div id="pageb" data-view="samples/Navigate/pageb">
+<style type="text/css">
+	#pageb .char {
+		font-size: 1500%;
+		text-align: center;
+	} 
+	#pageb .content .btn {
+		display: block;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+	#pageb .from {
+	  text-align: center;
+	  margin-top: 50px;
+	  color: gray;
+	}
+</style>
+<header class="bar bar-nav blue-bar">
+    <button class="btn btn-link btn-nav pull-left back">
+        <span class="icon icon-left-nav"></span>
+    </button>
+    <h1 class="title">Page B</h1>
+</header>
+<div class="content">
+	<div class="char">B</div>
+	<div class="btn btn-primary" action="go" dest="pagec.html" popup="false">Go page c</div>
+	<div class="btn btn-primary" action="go" dest="pagec.html" popup="true">Go page c(popup view)</div>
+	<div class="btn btn-primary" action="back" dest="-1">Go back (-1)</div>
+	<div class="btn btn-primary" action="back" dest="-2">Go back (-2)</div>
+	<div class="btn btn-primary" action="back" dest="pagea.html">Go back (page a)</div>
+	<div class="from"></div>
+</div>
+</div>

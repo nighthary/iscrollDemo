@@ -1,0 +1,52 @@
+<div id="listIndex" data-view="samples/ListView/index">
+    <style type="text/css">
+
+		#listIndex li{
+			position: relative;
+			height: auto;
+			padding: 0 10px;
+		}
+
+		#list{
+			position: absolute;
+			top: 100px;
+			bottom: 100px;
+			width: 100%;
+		}
+
+		.item{
+			position: relative;
+			width: 100%;
+			padding: 10px 0;
+			line-height: 2;
+		}
+
+		.name{
+			color: red;
+		}
+    </style>
+    <header class="bar bar-nav blue-bar">
+        <button class="btn btn-link btn-nav pull-left back">
+            <span class="icon icon-left-nav"></span>
+        </button>
+        <h1 class="title">ListView</h1>
+    </header>
+    <div class="content">
+        <div id="list" class="listview">
+            <div class="scroller">
+                <div class="message msg-notice">
+                    <div class="empty">暂时没有相关信息</div>
+                    <div class="error">数据获取失败</div>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script id="itemTemplate" type="text/x-handlebars-template">
+    	<div class="item">
+			<label for="" class="name"><%=name%></label>
+			<label for="" class="desc"><%=desc%></label>
+    	</div>
+    </script>
+</div>

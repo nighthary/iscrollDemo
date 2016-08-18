@@ -1,0 +1,12 @@
+{
+	"development" : {
+		"chameleonUrl": "http://m.changan.com.cn",
+		"iosDownloadUrl": "https://m.changan.com.cn:5222",
+		"androidDownloadUrl": "http://m.changan.com.cn"
+	},
+	"production" : {
+		"chameleonUrl": "http://m.changan.com.cn",
+		"iosDownloadUrl": "https://m.changan.com.cn:5222",
+		"androidDownloadUrl": "http://m.changan.com.cn"
+	}
+}

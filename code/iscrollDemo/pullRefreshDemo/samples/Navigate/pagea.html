@@ -1,0 +1,32 @@
+<div id="pagea" data-view="samples/Navigate/pagea">
+<style type="text/css">
+	#pagea .char {
+		font-size: 1500%;
+		text-align: center;
+	} 
+	#pagea .content .btn {
+		display: block;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+	#pagea .from {
+	  text-align: center;
+	  margin-top: 50px;
+	  color: gray;
+	}
+</style>
+<header class="bar bar-nav blue-bar">
+    <button class="btn btn-link btn-nav pull-left back">
+        <span class="icon icon-left-nav"></span>
+    </button>
+    <h1 class="title">Page A</h1>
+</header>
+<div class="content">
+	<div class="char">A</div>
+	<div class="btn btn-primary" action="go" dest="pageb.html" popup="false">Go page b</div>
+	<div class="btn btn-primary" action="go" dest="pageb.html" popup="true">Go page b(popup view)</div>
+	<div class="from"></div>
+</div>
+</div>

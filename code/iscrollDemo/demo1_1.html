@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+	<title>加载图片,需要在图片加载完成之后刷新iscroll</title>
+</head>
+<body>
+<style type="text/css">
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#wrapper{
+		width: 100%;
+		position: absolute;
+		top: 44px;
+		bottom: 10px;
+		transform: translateZ(0);
+		-webkit-transform: translateZ(0);
+		overflow: hidden;
+		border-top: 1px solid #999;
+	}
+
+	#scroller{
+		position: absolute;
+	    z-index: 1;
+	    padding: 0 10px;
+	    width: auto;
+	}
+
+	li{
+		list-style: none;
+		border-bottom: 1px solid #999;
+		position: relative;
+		padding: 30px 0;
+	}
+
+	li .name{
+		color: red;
+	}
+
+	li img{
+		width: 60px;
+		height: auto;
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+
+	.right{
+		padding-left: 70px;
+		line-height: 1.5
+	}
+	.header{
+		width: 100%;
+		height: 44px;
+		background-color: red;
+		position: absolute;
+		top: 0;
+		color: #fff;
+        line-height: 44px;
+        font-size: 18px;
+        padding-left: 10px;
+	}
+</style>
+<div class="header" onclick="window.history.back()">返回</div>
+<div id="wrapper">
+	<div id="scroller">
+		<ul></ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="iscroll-probe-5.1.1.js"></script>
+<script type="text/javascript">
+	/**
+	 *	异步加载dom,数据加载完成之后刷新iscroll
+	 */
+	var myscroll;
+	$(function(){
+		initIscroll();
+		loadData();
+	});
+
+
+	function initIscroll(){
+		if(!myscroll){
+			myscroll = new IScroll($('#wrapper')[0],{
+				mouseWheel:true
+			});
+		}
+	}
+
+	function refreshIScroll(){
+		if(myscroll){
+			myscroll.refresh();
+		}else{
+			initIscroll();
+		}
+	}
+
+	function loadData(){
+		$.ajax({
+			url:'data.json',
+			type:'get',
+			dataType:"json",
+			success: function(response){
+				if(response && response.result == 0){
+					uiView(response.data);
+				}
+			}
+		});
+	}
+
+	function uiView(data){
+		if(!data || (data && !data.length))return;
+		var html = "";
+		$.each(data, function(index, elem){
+			html += "<li><img src='"+elem.img+"'/>"
+					+"<div class='right'><span class='name'>" + elem.name + "</span>"
+					+":<span>" + elem.desc + "</span></div>"
+					+"</li>";
+		});
+
+		$('#scroller ul').empty().append(html);
+		refreshIScroll();
+	}
+</script>
+</body>
+</html>

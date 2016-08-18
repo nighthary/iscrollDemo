@@ -1,0 +1,3 @@
+<script id="tab-page-template" type="text/x-underscore-template">
+  <img src="<%=img%>" style="width:100%"</img>
+</script>

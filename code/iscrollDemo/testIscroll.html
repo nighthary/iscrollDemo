@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+	<title>ISCROLL</title>
+</head>
+<body>
+<style type="text/css">
+	html,body{
+		margin: 0;
+		padding: 0;
+	}
+	#wrapper{
+		position: absolute;
+		top: 10px;
+		bottom: 20px;
+		width: 100%;
+	}
+	ul li{
+		height: 50px;
+	}
+	#bottom{
+		width: 100%;
+		height: 20px;
+		position: absolute;
+		bottom: 0;
+		background-color: red;
+	}
+
+	input{
+		width: 80%;
+		height: 50px;
+		font-size: 20px;
+	}
+</style>
+<div id="wrapper">
+	<div id="scroller">
+		<div id="container">
+			<input type="text" placeholder="输入内容">
+		</div>
+	</div>
+</div>
+<div id="bottom"></div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="iscroll-probe-5.1.1.js"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+		var i = 0;
+		// window.myscroll = new iScroll($('#wrapper')[0],{
+		// 	mouseWheel:true
+		// });
+		window.myscroll = new IScroll($('#wrapper')[0],{
+			mouseWheel:true
+		});
+
+		$('#scroller').css('min-height',800);
+
+
+		$("#bottom").click(function(){
+			$('#scroller ul').append('<li>我是标题'+i+'</li>');
+			i++;
+		});
+	});
+</script>
+</body>
+</html>

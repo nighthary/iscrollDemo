@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/dialog
+END
+zepto_extend.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/dialog/zepto_extend.js
+END
+parseTpl.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/dialog/parseTpl.js
+END
+dialog.css
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/dialog/dialog.css
+END
+dialog.default.css
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/dialog/dialog.default.css
+END
+dialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CAMEAP/!svn/ver/7361/AppCAEC/trunk/Chameleon-v2.1/butterfly/js/components/dialog/dialog.js
+END
